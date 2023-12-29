@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Сколько осталось до дня рождения?</title>
+		<link rel="stylesheet" href="assets/style.css" />
+		<link rel="stylesheet" href="assets/normalize.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<h2><a>Практикум</a></h2>
+			<h1>Считаем дни до Дня Рождения!</h1>
+			<div id = img_birthday>
+			<img src="https://miranimacii.ru/wp-content/uploads/2018/09/mugchine-33.gif" alt="день Рождения">
+			</div>
+			
+			
+				<div>
+				<label for="messageDate">Введите дату:</label>
+				<input type="date"
+					id="messageDate"
+					name="bday"
+					required
+					pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" />
+				<span class="validity"></span>
+			
+				<button onclick="calculateBirthday()">Рассчитать</button>
+				
+			
+			<p id ="result"></p>
+			</div>
+			
+		</div>
+
+		<script src="week13.js"></script>
+	</body>
+</html>
